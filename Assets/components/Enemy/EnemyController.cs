@@ -1,15 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
     public EnemyStats stats;
     public Vector3 destination;
     public Units unitList;
+    public Image healthBar;
+
+    private float startHealth;
 
     private void OnEnable()
     {
+        startHealth = stats.health;
         unitList.Add(gameObject);
     }
 
@@ -47,5 +52,6 @@ public class EnemyController : MonoBehaviour
             Destroy(gameObject);
         }
         stats.health -= damage;
+        healthBar.fillAmount = stats.health / startHealth;
     }
 }
