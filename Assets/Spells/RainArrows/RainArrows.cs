@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RainArrows : MonoBehaviour
 {
+    public float damage = 20f;
+    public float damageInterval = 0.25f;
     public float radius = 3f;
     public float arrowSpeed = 2500;
     public float duration = 4f;
@@ -15,11 +17,14 @@ public class RainArrows : MonoBehaviour
 
     private float timeRemaining;
     private float burstTimeRemaining;
+    private float damagePerBurst;
 
     void Start()
     {
         timeRemaining = duration;
         burstTimeRemaining = burstDuration;
+        damagePerBurst = (duration / damageInterval) / damage;
+        StartCoroutine(DamageCheck());
         StartCoroutine(CastArrows());
     }
 
@@ -41,6 +46,15 @@ public class RainArrows : MonoBehaviour
             var spawnSpeed = arrowSpawnSpeed;
             if (burstTimeRemaining > 0) spawnSpeed *= 0.3f;
             yield return new WaitForSeconds(spawnSpeed);
+        }
+    }
+
+    IEnumerator DamageCheck()
+    {
+        while(gameObject.activeSelf)
+        {
+            AbilityUtilities.DamageInArea(transform.position, radius, damagePerBurst);
+            yield return new WaitForSeconds(damageInterval);
         }
     }
 

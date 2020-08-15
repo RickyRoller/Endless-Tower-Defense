@@ -47,30 +47,14 @@ public class Fireball : MonoBehaviour
 
             RenderScorch();
             if (renderDebug) RenderDebug();
-            DamageInArea(collider);
+            AbilityUtilities.DamageInArea(transform.position, radius, damage);
             Destroy(gameObject);
-        }
-    }
-
-    private void DamageInArea(Collider collider)
-    {
-        Collider[] hitColliders = Physics.OverlapSphere(
-            collider.transform.position,
-            radius,
-            LayerMask.GetMask("Enemies"),
-            QueryTriggerInteraction.Collide
-        );
-
-        foreach (Collider hitObject in hitColliders)
-        {
-            GameObject enemy = hitObject.transform.gameObject;
-            enemy.SendMessage("ApplyDamage", damage);
         }
     }
 
     private void RenderScorch()
     {
-        Vector3 position = gameObject.transform.position;
+        Vector3 position = transform.position;
         position.y = -0.48f;
         float scale = radius * 2;
         scorchMark.transform.localScale = new Vector3(scale, 1, scale);

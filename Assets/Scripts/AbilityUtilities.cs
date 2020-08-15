@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 
 public static class AbilityUtilities
@@ -25,5 +26,17 @@ public static class AbilityUtilities
     public static float WeightedCurveValue(AnimationCurve curve, float value)
     {
         return curve.Evaluate(UnityEngine.Random.value) * value;
+    }
+
+    public static void DamageInArea(Vector3 origin, float radius, float damage)
+    {
+        Collider[] enemies = Physics.OverlapSphere(origin, radius, LayerMask.GetMask("Enemies"));
+        if (enemies.Length > 0)
+        {
+            foreach (var collider in enemies)
+            {
+                collider.gameObject.SendMessage("ApplyDamage", damage);
+            }
+        }
     }
 }
