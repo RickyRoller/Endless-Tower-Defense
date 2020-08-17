@@ -17,7 +17,7 @@ public class Fireball : MonoBehaviour
     private bool hasCollided = false;
     private bool hasForce = false;
     private Quaternion _rotation;
-    void Awake()
+    void Start()
     {
         if (destination != null)
         {

@@ -45,8 +45,8 @@ public class TowerController : MonoBehaviour
 
     private void SpawnFireball(Vector3 point)
     {
-        Fireball fbMain = fireball.GetComponent<Fireball>();
+        GameObject fireballInstance = Instantiate(fireball, castPoint.position, gameObject.transform.rotation);
+        Fireball fbMain = fireballInstance.GetComponent<Fireball>();
         fbMain.destination = point;
-        Instantiate(fireball, castPoint.position, gameObject.transform.rotation);
     }
 }

@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 912635895af08c44bab883f30c121688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 35
+  damageInterval: 0.25
   radius: 3
   arrowSpeed: 200
   duration: 4
