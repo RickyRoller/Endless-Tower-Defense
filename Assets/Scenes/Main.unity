@@ -1638,7 +1638,7 @@ MonoBehaviour:
   - {fileID: 1790706209}
   - {fileID: 262529883}
   - {fileID: 763956240}
-  enemy: {fileID: 2962327436814720593, guid: a27e2d5e7b78d7b428e36c092cff5546, type: 3}
+  enemy: {fileID: 316563504455825102, guid: 4469cd3b977b46d439dec7e910d47794, type: 3}
   units: {fileID: 11400000, guid: bbb3e22c4edf5724cacbf3a02a163eef, type: 2}
 --- !u!114 &500543287
 MonoBehaviour:

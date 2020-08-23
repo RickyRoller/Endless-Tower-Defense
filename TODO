@@ -1,0 +1,36 @@
+
+Lightning Spell:
+  ✔ Draw main spell @done(20-08-23 12:53)
+  ☐ Draw secondary particles
+  ☐ Build spell mechanics
+
+Towers:
+  ☐ Better tower targeting
+
+Wall:
+  ☐ Wall stats
+  ☐ Wall HP UI
+
+Enemies:
+  ✔ Enemy model @done(20-08-23 12:55)
+  ☐ Attack Animation
+  ☐ Death Animation
+  ☐ Better run Animation
+  ☐ Enemy weapons
+  ☐ Deal damage to wall
+  ☐ Enemy tiers
+  ☐ Pause spawning UI
+
+Hero:
+  ☐ Add hero model
+  ☐ Hero attacks
+  ☐ Hero Animations
+
+Spell UI:
+  ☐ Spell UI for casting hero abilities
+  ☐ Drag spell onto battlefield
+  ☐ Show spell cooldown
+
+Prestiege:
+  ☐ Prestiege bonuses
+  ☐ Game restarts with new bonuses

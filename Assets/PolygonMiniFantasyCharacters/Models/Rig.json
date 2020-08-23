@@ -1,0 +1,1922 @@
+{
+	"Version": "0.1.0",
+	"MirrorPlane": "YZ",
+	"FullCenterOfMass": true,
+	"Units": [
+		{
+			"MainJoint": "pelvis",
+			"MainJointPath": [
+				"root"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -0.000000,
+					"y": 55.288841,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": -0.000000,
+					"z": 0.000000
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"BoxPosition": {
+				"x": 0.000000,
+				"y": 4.810837,
+				"z": -1.013093
+			},
+			"BoxScale": {
+				"x": 3.687263,
+				"y": 9.832702,
+				"z": 3.687263
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "spine_01",
+				"OtherUnitMainPath": [
+					"root",
+					"pelvis"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 0.000000,
+					"y": 0.000000,
+					"z": 10.000000
+				}
+			},
+			"Mass": 10.000000,
+			"Width": 5.000000,
+			"AdditionalChildrenJoints": [
+				"thigh_r",
+				"thigh_l"
+			],
+			"AdditionalChildrenJointsPath": [
+				{
+					"Name": "thigh_r",
+					"Path": [
+						"root",
+						"pelvis"
+					]
+				},
+				{
+					"Name": "thigh_l",
+					"Path": [
+						"root",
+						"pelvis"
+					]
+				}
+			],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "spine_01",
+			"MainJointPath": [
+				"root",
+				"pelvis"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": 0.000000,
+					"y": 9.621674,
+					"z": -2.026186
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": -0.024224,
+					"z": 1.570796
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "pelvis",
+				"NamePath": [
+					"root"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 7.765728,
+				"y": 0.000000,
+				"z": 0.000000
+			},
+			"BoxScale": {
+				"x": 15.531466,
+				"y": 5.824300,
+				"z": 5.824300
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "spine_02",
+				"OtherUnitMainPath": [
+					"root",
+					"pelvis",
+					"spine_01"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 0.242214,
+					"y": 0.000001,
+					"z": 9.997066
+				}
+			},
+			"Mass": 5.000000,
+			"Width": 4.500000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "spine_02",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": 15.531466,
+					"y": 0.000000,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": -3.141592,
+					"y": -3.127756,
+					"z": 3.141593
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "spine_01",
+				"NamePath": [
+					"root",
+					"pelvis"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 7.617044,
+				"y": -0.000001,
+				"z": -0.000000
+			},
+			"BoxScale": {
+				"x": 15.234078,
+				"y": 5.712780,
+				"z": 5.712780
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"LocalPosition": {
+					"x": 15.234079,
+					"y": -0.000001,
+					"z": -0.000000
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 0.380516,
+					"y": 0.000007,
+					"z": 9.992758
+				}
+			},
+			"Mass": 5.000000,
+			"Width": 5.000000,
+			"AdditionalChildrenJoints": [
+				"neck_01"
+			],
+			"AdditionalChildrenJointsPath": [
+				{
+					"Name": "neck_01",
+					"Path": [
+						"root",
+						"pelvis",
+						"spine_01",
+						"spine_02",
+						"spine_03"
+					]
+				}
+			],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "clavicle_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": 7.263528,
+					"y": 3.286753,
+					"z": -11.330300
+				},
+				"Rotation": {
+					"x": -0.156815,
+					"y": -1.163581,
+					"z": 1.847656
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"BoxPosition": {
+				"x": -6.333345,
+				"y": 0.000005,
+				"z": 0.000003
+			},
+			"BoxScale": {
+				"x": 12.666690,
+				"y": 4.750009,
+				"z": 4.750009
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "upperarm_r",
+				"OtherUnitMainPath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_r"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 3.864805,
+					"y": -0.759171,
+					"z": -9.191679
+				}
+			},
+			"Mass": 4.000000,
+			"Width": 2.573330,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "upperarm_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_r"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -12.666691,
+					"y": 0.000013,
+					"z": 0.000005
+				},
+				"Rotation": {
+					"x": -3.072982,
+					"y": -2.745249,
+					"z": 2.898173
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "clavicle_r",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": -13.378624,
+				"y": -0.583682,
+				"z": 0.000002
+			},
+			"BoxScale": {
+				"x": 26.782698,
+				"y": 10.043511,
+				"z": 10.043511
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "lowerarm_r",
+				"OtherUnitMainPath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_r",
+					"upperarm_r"
+				]
+			},
+			"AdditionalDirection": {
+				"OtherUnitAdditional": "lowerarm_r",
+				"OtherUnitAdditionalPath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_r",
+					"upperarm_r"
+				]
+			},
+			"Mass": 3.000000,
+			"Width": 0.600000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "lowerarm_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_r",
+				"upperarm_r"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -26.757252,
+					"y": -1.167354,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": 0.004919,
+					"y": -0.067822,
+					"z": 0.089933
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "upperarm_r",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_r"
+				],
+				"Type": "Hinge"
+			},
+			"BoxPosition": {
+				"x": -13.376877,
+				"y": 0.622469,
+				"z": 0.000000
+			},
+			"BoxScale": {
+				"x": 26.782703,
+				"y": 10.043514,
+				"z": 10.043514
+			},
+			"DirectionControllerLength": 100.000000,
+			"DirectionControllerIsRight": false,
+			"MainDirection": {
+				"LocalPosition": {
+					"x": -26.753754,
+					"y": 1.244938,
+					"z": 0.000001
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -0.464821,
+					"y": -9.989098,
+					"z": 0.040315
+				}
+			},
+			"Mass": 3.000000,
+			"Width": 0.600000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "middle_01_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_r",
+				"upperarm_r",
+				"lowerarm_r",
+				"hand_r"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -8.708529,
+					"y": -1.996490,
+					"z": 11.055272
+				},
+				"Rotation": {
+					"x": 2.746175,
+					"y": 2.313767,
+					"z": 2.851331
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "lowerarm_r",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_r",
+					"upperarm_r"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": -3.650506,
+				"y": -0.000031,
+				"z": 0.000001
+			},
+			"BoxScale": {
+				"x": 7.301013,
+				"y": 2.737880,
+				"z": 2.737880
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "middle_02_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_r",
+				"upperarm_r",
+				"lowerarm_r",
+				"hand_r",
+				"middle_01_r"
+			],
+			"BaseGlobalOffset": {
+				"x": -0.000015,
+				"y": 0.000000,
+				"z": 0.000001
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": -7.301014,
+					"y": -0.000058,
+					"z": 0.000002
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": -0.005490,
+					"z": 0.340074
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "middle_01_r",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_r",
+					"upperarm_r",
+					"lowerarm_r",
+					"hand_r"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": -1.500003,
+				"y": -0.000007,
+				"z": 0.000000
+			},
+			"BoxScale": {
+				"x": 2.999998,
+				"y": 1.124999,
+				"z": 1.124999
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "thumb_01_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_r",
+				"upperarm_r",
+				"lowerarm_r",
+				"hand_r"
+			],
+			"BaseGlobalOffset": {
+				"x": 0.000008,
+				"y": -0.000015,
+				"z": -0.000003
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": -9.761694,
+					"y": -0.000047,
+					"z": -0.000058
+				},
+				"Rotation": {
+					"x": -0.052187,
+					"y": 0.268950,
+					"z": 0.031258
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "lowerarm_r",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_r",
+					"upperarm_r"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": -3.832201,
+				"y": -0.000019,
+				"z": 0.000009
+			},
+			"BoxScale": {
+				"x": 7.664398,
+				"y": 2.874149,
+				"z": 2.874149
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "thumb_02_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_r",
+				"upperarm_r",
+				"lowerarm_r",
+				"hand_r",
+				"thumb_01_r"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -7.664399,
+					"y": -0.000025,
+					"z": 0.000012
+				},
+				"Rotation": {
+					"x": 3.063200,
+					"y": 2.968083,
+					"z": 2.901619
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "thumb_01_r",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_r",
+					"upperarm_r",
+					"lowerarm_r",
+					"hand_r"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": -3.951558,
+				"y": 0.000001,
+				"z": 0.000016
+			},
+			"BoxScale": {
+				"x": 7.903119,
+				"y": 2.963670,
+				"z": 2.963670
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "thumb_03_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_r",
+				"upperarm_r",
+				"lowerarm_r",
+				"hand_r",
+				"thumb_01_r",
+				"thumb_02_r"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -7.903118,
+					"y": 0.000015,
+					"z": 0.000032
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": 0.427018,
+					"z": 0.420195
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "thumb_02_r",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_r",
+					"upperarm_r",
+					"lowerarm_r",
+					"hand_r",
+					"thumb_01_r"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": -1.499995,
+				"y": 0.000001,
+				"z": 0.000005
+			},
+			"BoxScale": {
+				"x": 2.999997,
+				"y": 1.124999,
+				"z": 1.124999
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "clavicle_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03"
+			],
+			"BaseGlobalOffset": {
+				"x": 0.000030,
+				"y": -0.000023,
+				"z": 0.000013
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 7.263556,
+					"y": 3.286756,
+					"z": 11.330262
+				},
+				"Rotation": {
+					"x": 2.984778,
+					"y": -1.978012,
+					"z": 1.847656
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"BoxPosition": {
+				"x": 6.333344,
+				"y": -0.000001,
+				"z": 0.000004
+			},
+			"BoxOrientation": {
+				"x": 3.141593,
+				"y": -0.000001,
+				"z": 0.000001
+			},
+			"BoxScale": {
+				"x": 12.666690,
+				"y": 4.750009,
+				"z": 4.750009
+			},
+			"DirectionControllerEnabled": false,
+			"RigidBodyOffset": {
+				"x": 0.000000,
+				"y": 0.000000,
+				"z": 0.000000
+			},
+			"MainDirection": {
+				"OtherUnitMain": "upperarm_l",
+				"OtherUnitMainPath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_l"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -3.864817,
+					"y": 0.759170,
+					"z": 9.191675
+				}
+			},
+			"Mass": 4.000000,
+			"Width": 2.573330,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "upperarm_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_l"
+			],
+			"BaseGlobalOffset": {
+				"x": 0.000013,
+				"y": -0.000031,
+				"z": 0.000031
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 12.666713,
+					"y": 0.000000,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": -3.072982,
+					"y": -2.745249,
+					"z": 2.898174
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "clavicle_l",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 13.378625,
+				"y": 0.583685,
+				"z": 0.000024
+			},
+			"BoxOrientation": {
+				"x": -3.141592,
+				"y": -0.000002,
+				"z": 0.000000
+			},
+			"BoxScale": {
+				"x": 26.782698,
+				"y": 10.043511,
+				"z": 10.043511
+			},
+			"DirectionControllerEnabled": false,
+			"RigidBodyOffset": {
+				"x": 0.000000,
+				"y": 0.000000,
+				"z": 0.000000
+			},
+			"MainDirection": {
+				"OtherUnitMain": "lowerarm_l",
+				"OtherUnitMainPath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_l",
+					"upperarm_l"
+				]
+			},
+			"AdditionalDirection": {
+				"OtherUnitAdditional": "lowerarm_l",
+				"OtherUnitAdditionalPath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_l",
+					"upperarm_l"
+				]
+			},
+			"Mass": 3.000000,
+			"Width": 0.600000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "lowerarm_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_l",
+				"upperarm_l"
+			],
+			"BaseGlobalOffset": {
+				"x": 0.000019,
+				"y": -0.000015,
+				"z": 0.000077
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 26.757236,
+					"y": 1.167347,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": 0.009229,
+					"y": -0.126772,
+					"z": 0.089514
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "upperarm_l",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_l"
+				],
+				"Type": "Hinge"
+			},
+			"BoxPosition": {
+				"x": 13.353719,
+				"y": -0.624141,
+				"z": -0.785456
+			},
+			"BoxOrientation": {
+				"x": -0.004273,
+				"y": 3.082643,
+				"z": 3.141467
+			},
+			"BoxScale": {
+				"x": 26.782703,
+				"y": 10.043514,
+				"z": 10.043514
+			},
+			"DirectionControllerLength": 100.000000,
+			"DirectionControllerIsRight": true,
+			"RigidBodyOffset": {
+				"x": 0.000000,
+				"y": 0.000000,
+				"z": 0.000000
+			},
+			"MainDirection": {
+				"LocalPosition": {
+					"x": 26.707430,
+					"y": -1.248282,
+					"z": -1.570911
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 0.460380,
+					"y": 9.988783,
+					"z": -0.110235
+				}
+			},
+			"Mass": 3.000000,
+			"Width": 0.600000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "middle_01_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_l",
+				"upperarm_l",
+				"lowerarm_l",
+				"hand_l"
+			],
+			"BaseGlobalOffset": {
+				"x": 0.234818,
+				"y": 0.119469,
+				"z": -2.397096
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 8.708584,
+					"y": 1.996503,
+					"z": -11.055342
+				},
+				"Rotation": {
+					"x": 2.746175,
+					"y": 2.313767,
+					"z": 2.851331
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "lowerarm_l",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_l",
+					"upperarm_l"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": 3.644841,
+				"y": -0.001973,
+				"z": -0.203288
+			},
+			"BoxOrientation": {
+				"x": -0.019735,
+				"y": 3.085876,
+				"z": 3.141043
+			},
+			"BoxScale": {
+				"x": 7.301013,
+				"y": 2.737880,
+				"z": 2.737880
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "middle_02_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_l",
+				"upperarm_l",
+				"lowerarm_l",
+				"hand_l",
+				"middle_01_l"
+			],
+			"BaseGlobalOffset": {
+				"x": 0.272369,
+				"y": 0.139671,
+				"z": -2.801600
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 7.300905,
+					"y": 0.000001,
+					"z": -0.000006
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": -0.005490,
+					"z": 0.340074
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "middle_01_l",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_l",
+					"upperarm_l",
+					"lowerarm_l",
+					"hand_l"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": 1.497384,
+				"y": 0.000007,
+				"z": -0.088606
+			},
+			"BoxOrientation": {
+				"x": -3.141592,
+				"y": 0.059105,
+				"z": 0.000000
+			},
+			"BoxScale": {
+				"x": 2.999998,
+				"y": 1.124999,
+				"z": 1.124999
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "thumb_01_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_l",
+				"upperarm_l",
+				"lowerarm_l",
+				"hand_l"
+			],
+			"BaseGlobalOffset": {
+				"x": 0.622696,
+				"y": 0.093300,
+				"z": -1.870897
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 9.761761,
+					"y": 0.000000,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": -0.052187,
+					"y": 0.268950,
+					"z": 0.031258
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "lowerarm_l",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_l",
+					"upperarm_l"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": 3.825741,
+				"y": -0.001204,
+				"z": -0.222430
+			},
+			"BoxOrientation": {
+				"x": -0.011002,
+				"y": 3.083520,
+				"z": 3.141273
+			},
+			"BoxScale": {
+				"x": 7.664398,
+				"y": 2.874149,
+				"z": 2.874149
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "thumb_02_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_l",
+				"upperarm_l",
+				"lowerarm_l",
+				"hand_l",
+				"thumb_01_l"
+			],
+			"BaseGlobalOffset": {
+				"x": 0.914429,
+				"y": 0.110092,
+				"z": -2.206574
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 7.664390,
+					"y": 0.000000,
+					"z": -0.000000
+				},
+				"Rotation": {
+					"x": 3.063200,
+					"y": 2.968083,
+					"z": 2.901619
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "thumb_01_l",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_l",
+					"upperarm_l",
+					"lowerarm_l",
+					"hand_l"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": 3.945805,
+				"y": -0.002571,
+				"z": -0.213132
+			},
+			"BoxOrientation": {
+				"x": -0.024134,
+				"y": 3.087635,
+				"z": 3.140941
+			},
+			"BoxScale": {
+				"x": 7.903119,
+				"y": 2.963670,
+				"z": 2.963670
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "thumb_03_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03",
+				"clavicle_l",
+				"upperarm_l",
+				"lowerarm_l",
+				"hand_l",
+				"thumb_01_l",
+				"thumb_02_l"
+			],
+			"BaseGlobalOffset": {
+				"x": 1.128029,
+				"y": 0.128426,
+				"z": -2.575221
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 7.903092,
+					"y": -0.000000,
+					"z": -0.000000
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": 0.427018,
+					"z": 0.420195
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "thumb_02_l",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01",
+					"spine_02",
+					"spine_03",
+					"clavicle_l",
+					"upperarm_l",
+					"lowerarm_l",
+					"hand_l",
+					"thumb_01_l"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": 1.497375,
+				"y": -0.000001,
+				"z": -0.088610
+			},
+			"BoxOrientation": {
+				"x": -3.141592,
+				"y": 0.059105,
+				"z": 0.000000
+			},
+			"BoxScale": {
+				"x": 2.999997,
+				"y": 1.124999,
+				"z": 1.124999
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "thigh_r",
+			"MainJointPath": [
+				"root",
+				"pelvis"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -14.953700,
+					"y": -6.212194,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": -3.141593,
+					"y": 0.000000,
+					"z": 1.543005
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "pelvis",
+				"NamePath": [
+					"root"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": -9.266048,
+				"y": -0.000021,
+				"z": -0.000000
+			},
+			"BoxScale": {
+				"x": 18.532095,
+				"y": 6.949535,
+				"z": 6.949535
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "calf_r",
+				"OtherUnitMainPath": [
+					"root",
+					"pelvis",
+					"thigh_r"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -0.000000,
+					"y": -0.000002,
+					"z": -10.000000
+				}
+			},
+			"Mass": 4.000000,
+			"Width": 1.634865,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "calf_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"thigh_r"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -18.532097,
+					"y": -0.000042,
+					"z": -0.000000
+				},
+				"Rotation": {
+					"x": -1.352467,
+					"y": 0.277774,
+					"z": 0.012169
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "thigh_r",
+				"NamePath": [
+					"root",
+					"pelvis"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": -10.791384,
+				"y": 0.117873,
+				"z": 0.000032
+			},
+			"BoxScale": {
+				"x": 21.584053,
+				"y": 8.094020,
+				"z": 8.094020
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "foot_r",
+				"OtherUnitMainPath": [
+					"root",
+					"pelvis",
+					"thigh_r",
+					"calf_r"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 2.742154,
+					"y": 9.388390,
+					"z": -2.082970
+				}
+			},
+			"Mass": 3.000000,
+			"Width": 1.146551,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "foot_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"thigh_r",
+				"calf_r"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -21.582766,
+					"y": 0.235744,
+					"z": 0.000062
+				},
+				"Rotation": {
+					"x": -0.078328,
+					"y": -2.945634,
+					"z": 1.769370
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "calf_r",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"thigh_r"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": -4.616412,
+				"y": 1.891173,
+				"z": -0.000000
+			},
+			"BoxScale": {
+				"x": 9.977533,
+				"y": 3.741575,
+				"z": 3.741575
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"LocalPosition": {
+					"x": -9.232823,
+					"y": 3.782346,
+					"z": -0.000000
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -8.902721,
+					"y": -4.554291,
+					"z": 0.000005
+				}
+			},
+			"Mass": 2.000000,
+			"Width": 3.000000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "ball_r",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"thigh_r",
+				"calf_r",
+				"foot_r"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -9.232825,
+					"y": 3.782343,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": -0.000000,
+					"z": 0.375482
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "foot_r",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"thigh_r",
+					"calf_r"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": -2.944474,
+				"y": 0.000001,
+				"z": 0.000002
+			},
+			"BoxScale": {
+				"x": 5.888949,
+				"y": 2.208356,
+				"z": 2.208356
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "thigh_l",
+			"MainJointPath": [
+				"root",
+				"pelvis"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": 14.953698,
+					"y": -6.212195,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": 3.141593,
+					"y": 3.141593,
+					"z": 1.598587
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "pelvis",
+				"NamePath": [
+					"root"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 9.266049,
+				"y": 0.000023,
+				"z": 0.000001
+			},
+			"BoxOrientation": {
+				"x": -3.141593,
+				"y": -0.000000,
+				"z": 0.000000
+			},
+			"BoxScale": {
+				"x": 18.532095,
+				"y": 6.949535,
+				"z": 6.949535
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "calf_l",
+				"OtherUnitMainPath": [
+					"root",
+					"pelvis",
+					"thigh_l"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -0.000001,
+					"y": -0.000001,
+					"z": 10.000000
+				}
+			},
+			"Mass": 4.000000,
+			"Width": 1.634865,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "calf_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"thigh_l"
+			],
+			"BaseGlobalOffset": {
+				"x": 0.000046,
+				"y": -0.000002,
+				"z": 0.000002
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 18.532089,
+					"y": -0.000000,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": -1.354534,
+					"y": 0.227371,
+					"z": 0.011652
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "thigh_l",
+				"NamePath": [
+					"root",
+					"pelvis"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 10.783485,
+				"y": 0.414443,
+				"z": -0.111710
+			},
+			"BoxOrientation": {
+				"x": -3.139399,
+				"y": 0.010325,
+				"z": 0.049337
+			},
+			"BoxScale": {
+				"x": 21.584053,
+				"y": 8.094020,
+				"z": 8.094020
+			},
+			"DirectionControllerEnabled": false,
+			"RigidBodyOffset": {
+				"x": 0.000000,
+				"y": 0.000000,
+				"z": 0.000000
+			},
+			"MainDirection": {
+				"OtherUnitMain": "foot_l",
+				"OtherUnitMainPath": [
+					"root",
+					"pelvis",
+					"thigh_l",
+					"calf_l"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -2.254172,
+					"y": -9.515684,
+					"z": 2.090574
+				}
+			},
+			"Mass": 3.000000,
+			"Width": 1.146551,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "foot_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"thigh_l",
+				"calf_l"
+			],
+			"BaseGlobalOffset": {
+				"x": -0.000006,
+				"y": 0.260757,
+				"z": -1.056210
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 21.582747,
+					"y": -0.235730,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": -0.078328,
+					"y": -2.945634,
+					"z": 1.769370
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "calf_l",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"thigh_l"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 4.515186,
+				"y": -2.121532,
+				"z": 0.000000
+			},
+			"BoxOrientation": {
+				"x": 0.000001,
+				"y": -3.141592,
+				"z": 3.091150
+			},
+			"BoxScale": {
+				"x": 9.977533,
+				"y": 3.741575,
+				"z": 3.741575
+			},
+			"DirectionControllerEnabled": false,
+			"RigidBodyOffset": {
+				"x": 0.000000,
+				"y": 0.000000,
+				"z": 0.000000
+			},
+			"MainDirection": {
+				"LocalPosition": {
+					"x": 9.030373,
+					"y": -4.243063,
+					"z": 0.000001
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 9.121030,
+					"y": 4.099617,
+					"z": 0.000001
+				}
+			},
+			"Mass": 2.000000,
+			"Width": 3.000000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		},
+		{
+			"MainJoint": "ball_l",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"thigh_l",
+				"calf_l",
+				"foot_l"
+			],
+			"BaseGlobalOffset": {
+				"x": -0.000006,
+				"y": -0.076453,
+				"z": -1.429743
+			},
+			"JointLocalData": {
+				"Position": {
+					"x": 9.232829,
+					"y": -3.782353,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": 0.000000,
+					"z": 0.375482
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "foot_l",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"thigh_l",
+					"calf_l"
+				],
+				"Type": "Null"
+			},
+			"BoxPosition": {
+				"x": 2.940730,
+				"y": -0.148464,
+				"z": -0.000001
+			},
+			"BoxOrientation": {
+				"x": 0.000001,
+				"y": -3.141592,
+				"z": 3.091151
+			},
+			"BoxScale": {
+				"x": 5.888949,
+				"y": 2.208356,
+				"z": 2.208356
+			},
+			"DirectionControllerEnabled": false,
+			"PhysicsEnabled": false
+		},
+		{
+			"MainJoint": "neck_01",
+			"MainJointPath": [
+				"root",
+				"pelvis",
+				"spine_01",
+				"spine_02",
+				"spine_03"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": 19.008188,
+					"y": 0.000000,
+					"z": -0.000000
+				},
+				"Rotation": {
+					"x": 3.141593,
+					"y": 0.000000,
+					"z": 0.455963
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "spine_02",
+				"NamePath": [
+					"root",
+					"pelvis",
+					"spine_01"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 3.496482,
+				"y": 0.000000,
+				"z": -0.000000
+			},
+			"BoxScale": {
+				"x": 6.992963,
+				"y": 2.622361,
+				"z": 2.622361
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"LocalPosition": {
+					"x": 6.992964,
+					"y": 0.000000,
+					"z": -0.000000
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 3.888802,
+					"y": -9.212883,
+					"z": 0.000004
+				}
+			},
+			"Mass": 7.000000,
+			"Width": 5.000000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": []
+		}
+	],
+	"CMs": [],
+	"CompositeCMs": []
+}
