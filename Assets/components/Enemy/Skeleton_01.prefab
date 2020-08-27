@@ -590,10 +590,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f5922f0bc3d704caf4041767963645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _baseStats: {fileID: 11400000, guid: 9bc656acf07a8b44b815b5ad61fd2113, type: 2}
   stats: {fileID: 0}
   destination: {x: 10.660002, y: 0, z: 0.07407999}
   unitList: {fileID: 11400000, guid: bbb3e22c4edf5724cacbf3a02a163eef, type: 2}
   healthBar: {fileID: 5865283758446327822}
+  currentState: 0
 --- !u!54 &-7658399405608094559
 Rigidbody:
   m_ObjectHideFlags: 0

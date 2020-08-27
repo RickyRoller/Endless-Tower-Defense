@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public Transform[] endPoints;
     public GameObject enemy;
     public Units units;
+    public WallController wallController;
 
     private void Awake()
     {

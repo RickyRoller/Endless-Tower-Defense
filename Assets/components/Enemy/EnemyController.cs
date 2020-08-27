@@ -1,21 +1,37 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
+    public EnemyStats _baseStats;
     public EnemyStats stats;
     public Vector3 destination;
     public Units unitList;
     public Image healthBar;
+    public State currentState;
 
-    private float startHealth;
-
-    private void OnEnable()
+    public enum State
     {
-        startHealth = stats.health;
+        RUNNING,
+        ATTACKING,
+    }
+
+    private GameManager GameManager;
+    private Animator animator;
+    private float attackTime;
+
+    private void Start()
+    {
         unitList.Add(gameObject);
+        currentState = State.RUNNING;
+        stats = _baseStats;
+        attackTime = _baseStats.attackSpeed;
+
+        animator = GetComponent<Animator>();
+        GameManager = FindObjectOfType<GameManager>();
     }
 
     private void OnDestroy()
@@ -26,10 +42,48 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        switch (currentState)
+        {
+            case State.ATTACKING:
+                Attack();
+                break;
+            case State.RUNNING:
+            default:
+                Run();
+                break;
+        }
+    }
+
+    private void Attack()
+    {
+        if (attackTime <= 0)
+        {
+            animator.SetTrigger("Attack");
+            attackTime = stats.attackSpeed;
+            StartCoroutine(DealDamage());
+        } else
+        {
+            attackTime -= Time.deltaTime;
+        }
+    }
+
+    private IEnumerator DealDamage()
+    {
+        yield return new WaitForSeconds(0.3f);
+        GameManager.wallController.SendMessage("ApplyDamage", stats.damage);
+
+    }
+
+    private void Run()
+    {
         if (transform.position != destination && destination != null)
         {
             LookAtTarget();
             MoveToTarget();
+        } else
+        {
+            currentState = State.ATTACKING;
+            animator.SetBool("isRunning", false);
         }
     }
 
@@ -52,6 +106,6 @@ public class EnemyController : MonoBehaviour
             Destroy(gameObject);
         }
         stats.health -= damage;
-        healthBar.fillAmount = stats.health / startHealth;
+        healthBar.fillAmount = stats.health / _baseStats.health;
     }
 }

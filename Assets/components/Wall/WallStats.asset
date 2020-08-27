@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c297c6033b999a54595de31bf3a94053, type: 3}
-  m_Name: EnemyStats
+  m_Script: {fileID: 11500000, guid: 658671187b2805442924ff7b1ef882d4, type: 3}
+  m_Name: WallStats
   m_EditorClassIdentifier: 
-  health: -566
-  enemyName: Basic ass grunt
-  speed: 10
-  attackSpeed: 1.2
-  damage: 10
+  maxHealth: 200
+  health: 10

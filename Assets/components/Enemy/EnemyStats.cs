@@ -9,4 +9,6 @@ public class EnemyStats : ScriptableObject
     public float health;
     public string enemyName;
     public float speed;
+    public float attackSpeed;
+    public float damage;
 }

@@ -36,18 +36,13 @@ public class Spawner : MonoBehaviour
 
     void SpawnEnemy(GameObject enemy, Transform spawnPoint)
     {
+        GameObject instanceGM = Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+
         Transform wallStart = GM.endPoints[0];
         Transform wallEnd = GM.endPoints[GM.endPoints.Length - 1];
         Vector3 destination = new Vector3(wallStart.position.x, enemy.transform.position.y, UnityEngine.Random.Range(wallEnd.position.z, wallStart.position.z));
 
-        EnemyController enemyCon = enemy.GetComponent<EnemyController>();
+        EnemyController enemyCon = instanceGM.GetComponent<EnemyController>();
         enemyCon.destination = destination;
-
-        enemyCon.stats = ScriptableObject.CreateInstance<EnemyStats>();
-        enemyCon.stats.enemyName = "Basic ass grunt";
-        enemyCon.stats.health = 10f;
-        enemyCon.stats.speed = 10f;
-
-        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
     }
 }
