@@ -55,7 +55,7 @@ public class Fireball : MonoBehaviour
     private void RenderScorch()
     {
         Vector3 position = transform.position;
-        position.y = -0.48f;
+        position.y = 0.01f;
         float scale = radius * 2;
         scorchMark.transform.localScale = new Vector3(scale, 1, scale);
         Instantiate(scorchMark, position, Quaternion.identity);
