@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WallController : MonoBehaviour
 {
     public WallStats wallStats;
+    public Image wallHeathBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +28,6 @@ public class WallController : MonoBehaviour
         {
             wallStats.health -= damage;
         }
+        wallHeathBar.fillAmount = wallStats.health / wallStats.maxHealth;
     }
 }
