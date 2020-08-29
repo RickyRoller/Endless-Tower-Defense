@@ -5,11 +5,11 @@ Lightning Spell:
   ☐ Build spell mechanics
 
 Towers:
-  ☐ Better tower targeting
+  ✔ Better tower targeting @done(20-08-29 14:24)
 
 Wall:
-  ☐ Wall stats
-  ☐ Wall HP UI
+  ✔ Wall stats @done(20-08-29 14:24)
+  ✔ Wall HP UI @done(20-08-29 14:24)
 
 Enemies:
   ✔ Enemy model @done(20-08-23 12:55)
@@ -17,7 +17,7 @@ Enemies:
   ☐ Death Animation
   ☐ Better run Animation
   ☐ Enemy weapons
-  ☐ Deal damage to wall
+  ✔ Deal damage to wall @done(20-08-29 14:24)
   ☐ Enemy tiers
   ☐ Pause spawning UI
 
