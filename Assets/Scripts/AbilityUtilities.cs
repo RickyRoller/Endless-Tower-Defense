@@ -39,4 +39,23 @@ public static class AbilityUtilities
             }
         }
     }
+
+    public static GameObject GetClosestObject(Vector3 origin, GameObject[] objects)
+    {
+        float distance = 0f;
+        GameObject closest = null;
+        for (int i = 0; i < objects.Length; i++)
+        {
+            GameObject gameObject = objects[i];
+            float dist = Vector3.Distance(origin, gameObject.transform.position);
+
+            if (i == 0 || dist < distance)
+            {
+                distance = dist;
+                closest = gameObject;
+            }
+        }
+
+        return closest;
+    }
 }
