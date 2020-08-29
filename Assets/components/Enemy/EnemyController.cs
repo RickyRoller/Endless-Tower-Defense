@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Sirenix.OdinInspector;
 
 public class EnemyController : MonoBehaviour
 {
@@ -22,6 +23,12 @@ public class EnemyController : MonoBehaviour
     private GameManager GameManager;
     private Animator animator;
     private float attackTime;
+
+    [ProgressBar(0, 1), ShowInInspector]
+    private float attackTimeBar
+    {
+        get { return attackTime / _baseStats.attackSpeed; }
+    }
 
     private void Start()
     {

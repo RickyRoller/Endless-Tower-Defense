@@ -98,7 +98,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 7991
 --- !u!1 &3579615053019388850
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 2425066884716887789}
   - component: {fileID: 3956460697590350902}
   m_Layer: 8
-  m_Name: CanvasRotation
+  m_Name: HealthBarRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
