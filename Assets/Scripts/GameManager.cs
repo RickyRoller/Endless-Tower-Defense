@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
+        wallController = FindObjectOfType<WallController>();
     }
 
     void Update()

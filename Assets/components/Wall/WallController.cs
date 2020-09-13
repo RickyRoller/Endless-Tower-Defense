@@ -11,6 +11,7 @@ public class WallController : MonoBehaviour
     void Start()
     {
         wallStats.health = wallStats.maxHealth;
+        wallHeathBar = GameObject.Find("WallHealthBar").GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class WallController : MonoBehaviour
     {
         if (wallStats.health - damage <= 0)
         {
+            wallStats.health = 0;
             Debug.Log("Game Over. Prestiege Time!");
         } else
         {
