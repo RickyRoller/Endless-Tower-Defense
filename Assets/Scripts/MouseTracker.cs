@@ -6,8 +6,8 @@ using UnityEngine.EventSystems;
 
 public class MouseTracker : MonoBehaviour
 {
-    public GameObject prefab;
-    public GameObject spell;
+    public GameObject spellMarker;
+    private GameObject spell;
     private GameObject _instantiatedPrefab;
     private bool isTracking = false;
     private bool shouldCastSpell = false;
@@ -50,20 +50,35 @@ public class MouseTracker : MonoBehaviour
 
     void OnMouseDown()
     {
-        isTracking = true;
-        _instantiatedPrefab = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
+        if (spellMarker != null)
+        {
+            isTracking = true;
+            _instantiatedPrefab = Instantiate(spellMarker, new Vector3(0, 0, 0), Quaternion.identity);
+        }
     }
 
     void OnMouseUp()
     {
-        if (spell != null && shouldCastSpell)
+        if (isTracking)
         {
-            Instantiate(spell, trackedLocation, Quaternion.identity);
-        }
+            if (spell != null && shouldCastSpell)
+            {
+                Instantiate(spell, trackedLocation, Quaternion.identity);
+            }
 
-        isTracking = false;
-        Destroy(_instantiatedPrefab);
-        _instantiatedPrefab = null;
-        shouldCastSpell = false;
+            isTracking = false;
+            Destroy(_instantiatedPrefab);
+            _instantiatedPrefab = null;
+            spell = null;
+            spellMarker = null;
+            shouldCastSpell = false;
+        }
+    }
+
+    public void AssignSpell(SpellInstanceData spellData)
+    {
+        Debug.Log(spellData);
+        spell = spellData.spell;
+        spellMarker = spellData.spellMarker;
     }
 }

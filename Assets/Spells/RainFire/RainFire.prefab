@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: d046a610fb7e5574d87f752114f740e9, type: 2}
-  projectile: {fileID: 3067631976522465615, guid: 2a04c47ddda41164daf7fb772206bdd2,
+  projectile: {fileID: 2487735245531747952, guid: 2a04c47ddda41164daf7fb772206bdd2,
     type: 3}
